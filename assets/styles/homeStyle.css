@@ -1,0 +1,219 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+:root {
+  --white: #fff;
+  --btn-primary: rgba(0, 255, 42, 0.671);
+  --btn-secondary: rgba(0, 222, 33, 0.678);
+  --bgc-primary: #262c3a;
+  --disclaimer: red;
+  --bgc-black: #000;
+}
+
+/* Começo da estilização da navbar */
+.navBar {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 15vh;
+  background: url(../images/19643055883023.5996f8afa3a8f.gif) no-repeat #000;
+  background-size: contain;
+  background-position: left;
+}
+
+.navgation {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 20px;
+  position: relative;
+  right: -35%;
+}
+.navgation a {
+  text-decoration: none;
+  color: var(--white);
+  font-weight: 600;
+}
+
+/* final da estilização da navbar */
+
+/* area inicial */
+
+.welcome .welcomeContent {
+  width: 100vw;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: var(--bgc-primary);
+}
+.welcomeContent hr {
+  width: 100%;
+}
+.wcText {
+  margin-top: 5%;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 26px;
+  font-weight: 700;
+  text-shadow: 4px 4px 4px black;
+  color: var(--white);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin-right: -8%;
+  margin-bottom: 10vh;
+
+  padding-top: 4vh;
+}
+.wcText h1 {
+  margin-bottom: 10vh;
+  margin-top: -4vh;
+}
+
+.png {
+  position: absolute;
+  right: 10px;
+  bottom: 23.3%;
+}
+.png img {
+  width: 200px;
+}
+.png1 {
+  position: absolute;
+  left: 0;
+  top: 86.6px;
+}
+.png1 img {
+  width: 200px;
+}
+
+.ytVideo {
+  background: var(--bgc-primary);
+  width: 100vw;
+  height: auto;
+  display: flex;
+  justify-content: center;
+}
+
+/* fim da area inicial */
+
+/* começo da discriotion da serie */
+.mainContent {
+  background: url("https://wallpaperaccess.com/full/85327.png") repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: self-start;
+  width: 100vw;
+  height: 100vh;
+  padding: 30px;
+}
+
+.mainContent .content {
+  font-size: larger;
+  color: var(--white);
+  font-weight: 400;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: left;
+  width: 60vw;
+}
+.content h1 {
+  margin-bottom: 20px;
+}
+.content p {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 600;
+}
+
+/* fim da discription */
+
+/* coneço da area dos buttons */
+.options .actions {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  background: var(--bgc-primary);
+  margin-bottom: 5%;
+  padding: 50px 0;
+}
+
+a.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(../images/fundo\ button.png);
+  border-radius: 5px;
+  font-weight: 600;
+  font-size: larger !important;
+  width: 40vw;
+  height: 55px;
+  background-clip: border-box;
+  background-size: cover;
+  border: 1px solid black;
+  padding: 2px;
+  text-decoration: none;
+  color: var(--white);
+  text-shadow: 2px 2px 1px black;
+}
+a.button:hover {
+  transform: scale(1.1);
+  border: 2px solid black;
+  box-shadow: 5px 5px 8px var(--bgc-black);
+}
+
+/* fim da area de buttons */
+
+/* começo da area do disclaimer */
+.disclaimer {
+  background: var(--bgc-primary);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: -5%;
+}
+.disclaimer img {
+  flex: 1;
+}
+
+.disclaimer aside {
+  position: relative;
+  top: -30vh;
+  padding: 30px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: baseline;
+  align-items: start;
+  float: right;
+  width: 40vw;
+  height: auto;
+  margin-top: 30%;
+}
+
+.disclaimer p {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 600;
+  color: var(--white);
+  font-size: larger;
+}
+.disclaimer h1 {
+  color: var(--disclaimer);
+  margin-bottom: 30px;
+  font-weight: 900;
+  font-size: 40px;
+}
+/* fim da area do disclaimer */
+
+/* começo do footer */
+
+/* dim do footer */
