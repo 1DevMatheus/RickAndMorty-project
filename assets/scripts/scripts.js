@@ -63,13 +63,14 @@ function getPersonagens() {
       data.results.map((results) => {
         container.innerHTML +=
           `
-        <div> <img src=` +
+        <div class="card"> <img src=` +
           results.image +
           `>
-        <header>Name: ` +
+          <div class="cardInfo">
+          Name: ` +
           results.name +
-          `</header>
-         <main>Gender: ` +
+          `
+          Gender: ` +
           results.gender +
           `
          <br>
@@ -87,9 +88,9 @@ function getPersonagens() {
           results.origin.name +
           `
         <br>
-        <span> number of episodes appeared  (${results.episode.length}) </span>
-<main>
+        number of episodes appeared:  (${results.episode.length}) </span>
         </div>
+      </div>
          `;
       });
     });

@@ -7,54 +7,127 @@
 :root {
   --btn: rgb(10, 81, 189);
   --btnHover: rgb(85, 231, 18);
+  --bgc-primary: #262c3a;
+  --white: #fff;
+}
+html {
+  background: var(--bgc-primary);
 }
 
+/* navbar */
+.navBar {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 15vh;
+  background: url(../images/19643055883023.5996f8afa3a8f.gif) no-repeat #000;
+  background-size: contain;
+  background-position: left;
+}
+.navgation {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 20px;
+  position: relative;
+  right: -35%;
+}
+.navgation a {
+  text-decoration: none;
+  color: var(--white);
+  font-weight: 600;
+}
+/* fim da navbar */
+
+/* container home e card */
 .container {
   padding-top: 5vh;
   display: flex;
   flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
+  align-items: stretch;
   gap: 10px;
   z-index: -10;
+  flex-wrap: wrap;
+  align-content: stretch;
+  justify-content: space-evenly;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: auto;
+  height: auto;
+  flex-wrap: nowrap;
+  align-items: flex-start;
 }
 
+.cardInfo {
+  display: flex;
+  row-gap: 20px;
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: var(--white);
+}
+/* fim container e cards */
+/* Botoes */
 .btnContainer {
+  padding-left: 5vw;
+  padding-right: 5vw;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  padding-bottom: 5vhg;
+  padding-bottom: 5vh;
   margin-top: 6vh;
 }
 
 .nextBtn {
-  margin: 10px 20px;
+  width: 20%;
+  box-shadow: 4px 4px 8px black;
+  height: 5vh;
+  border: 2px solid #000000;
+
+  border-radius: 5px;
+  background: url(../images/fundo\ button.png);
+}
+.backBtn {
+  display: flex;
+  color: black;
+  box-shadow: 4px 4px 8px black;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  border: 2px solid #000000;
+  border-radius: 5px;
+  background: url(../images/fundo\ button.png);
   width: 20%;
   height: 5vh;
-  border-radius: 5px;
-  background-color: var(--btn);
 }
 
 .prevBtn {
-  margin: 10px 20px;
+  border: 2px solid #000000;
   width: 20%;
   height: 5vh;
+  box-shadow: 4px 4px 8px black;
   border-radius: 5px;
-  background-color: var(--btn);
+  background: url(../images/fundo\ button.png);
 }
 
 .prevBtn:hover {
-  background-color: var(--btnHover);
-  width: 22%;
+  transform: scale(1.1);
 }
 
 .nextBtn:hover {
-  background-color: var(--btnHover);
-  width: 22%;
+  transform: scale(1.1);
 }
+.backBtn:hover {
+  transform: scale(1.1);
+}
+/* fim botoes */
 
+/* Efeito de loaging */
 .loading {
   background: rgba(255, 255, 255, 0.411);
   border: 5pc solid red;
@@ -102,3 +175,5 @@
     transform: rotate(360deg);
   }
 }
+
+/* medias querry ou responsividade*/
