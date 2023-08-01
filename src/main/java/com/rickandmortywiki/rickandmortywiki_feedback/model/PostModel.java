@@ -23,8 +23,19 @@ public class PostModel {
 	
 	@NotBlank(message = "The username attribute is Required!") 
 	@Size(min = 5, max = 100, message = "O atributo título deve conter no mínimo 05 e no máximo 100 caracteres")
-	private String userName;
+	private String user;
 	
+	@NotBlank
+	private String target;
+	
+	public String getTarget() {
+		return target;
+	}
+
+	public void setTarget(String target) {
+		this.target = target;
+	}
+
 	@NotBlank(message = "The text attribute is Required!")
 	@Size(min = 10, max = 1000, message = "The text attribute must contain a minimum of 10 and a maximum of 1000 characters!")
 	private String text;
@@ -40,12 +51,12 @@ public class PostModel {
 		this.id = id;
 	}
 
-	public String getUserName() {
-		return userName;
+	public String getUser() {
+		return user;
 	}
 
-	public void setUserName(String userName) {
-		this.userName = userName;
+	public void setUserName(String user) {
+		this.user = user;
 	}
 
 	public String getText() {
