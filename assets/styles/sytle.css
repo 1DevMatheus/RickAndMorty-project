@@ -175,5 +175,18 @@ html {
     transform: rotate(360deg);
   }
 }
+.data {
+  color: #fff;
+  display: flex;
+  flex-direction: row;
+  gap: 5%;
+  font-size: 28px;
+}
 
+.epcontainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: var(--bgc-primary);
+}
 /* medias querry ou responsividade*/

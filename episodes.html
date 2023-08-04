@@ -3,11 +3,16 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="./assets/scripts/scripts-episode.js"></script>
-    <!-- <link rel="stylesheet" href="./assets/styles/sytle.css" /> -->
+    <link rel="stylesheet" href="./assets/styles/sytle.css" />
     <title>Document</title>
   </head>
   <body>
-    <div class="container"></div>
+    <div id="container" class="epcontainer"></div>
+    <div id="btnContainer" class="btnContainer">
+      <button onclick="prevPage() " class="prevBtn">Prev Page</button>
+      <a class="backBtn" href="index.html">Back home</a>
+      <button onclick="nextPage()" class="nextBtn">Next Page</button>
+    </div>
   </body>
+  <script src="./assets/scripts/scripts-episode.js"></script>
 </html>
