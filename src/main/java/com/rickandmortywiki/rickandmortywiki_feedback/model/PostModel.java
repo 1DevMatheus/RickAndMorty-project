@@ -55,7 +55,7 @@ public class PostModel {
 		return user;
 	}
 
-	public void setUserName(String user) {
+	public void setUser(String user) {
 		this.user = user;
 	}
 
