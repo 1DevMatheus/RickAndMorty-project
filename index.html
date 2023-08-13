@@ -14,7 +14,7 @@
         <img src="" alt="" srcset="">
         <ul class="navgation">
           <li><a href="https://github.com/1DevMatheus/JavaScript/tree/RickandMorty">Repo</a></li>
-          <li><a href="">Feedback</a></li>
+          <li><a href="#feedback">Feedback</a></li>
         </ul>
       </header>
       <!-- fim da navbar -->
@@ -95,9 +95,27 @@
         </main>
       </section>
       <hr>
+      <div id="feedback" class="feedback">
+        <button id="showModaç"></button>
+        <div class="createFeedback">
+          <form id="formELEMENT">
+            <input size="50" type="text" placeholder="User Name" name="userName" />
+            <select size="" id="target" name="target">
+              <option value="">-Select your feedback target-</option>
+              <option value="Application">Application</option>
+              <option value="Serie">Serie</option>
+            </select>            <input size="50" type="text" placeholder="Message" name="message" />
+            <input  type="submit" />
+          </form>
+
+        <div class="feed">
+          <div class="feedbackContainer">
+            
+          </div>
+        </div>
+      </div>
       <section class="disclaimer">
         <img src="https://steamuserimages-a.akamaihd.net/ugc/920290553152905607/4FD2AF939C0C9923B8B9DD9A7C65E9C6C145CF3A/?imw=5000&imh=5000&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=false" alt="" srcset="">
-
           <aside class="about-text">
             <h1>Disclaimer</h1>
             <p>
@@ -115,4 +133,5 @@
       </section>
     </div>
   </body>
+  <script src="./assets/scripts/feedbacks.js"></script>
 </html>

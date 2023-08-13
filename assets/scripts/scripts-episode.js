@@ -84,3 +84,7 @@ function getEpisodes() {
     });
 }
 getEpisodes();
+
+const feedbackMSG = document.querySelector("feedbackMSG");
+
+feedbackMSG.post("");

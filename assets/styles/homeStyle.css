@@ -3,6 +3,10 @@
   margin: 0;
   box-sizing: border-box;
   overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+html {
+  scroll-behavior: smooth;
 }
 :root {
   --white: #fff;
@@ -134,7 +138,6 @@
   align-items: center;
   justify-content: space-around;
   background: var(--bgc-primary);
-  margin-bottom: 5%;
   padding: 50px 0;
 }
 
@@ -204,6 +207,61 @@ a.button:hover {
   font-size: 40px;
 }
 /* fim da area do disclaimer */
+
+/* areade feedback */
+
+.createFeedback {
+}
+
+.createFeedback input,
+select {
+  display: flex;
+  width: 60%;
+  padding: 12px 20px;
+  margin: 10px 20%;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.feedback {
+  background: var(--bgc-primary);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  scroll-behavior: smooth;
+}
+.cardFeedback {
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  background: aqua;
+  min-width: 30vw;
+  align-content: center;
+  justify-content: center;
+  align-items: flex-start;
+  margin: 1em;
+  padding: 30px;
+}
+
+.feedbackContainer {
+  background: var(--bgc-primary);
+  display: flex;
+  flex-direction: row;
+  width: 100vw;
+  height: 100vh;
+  flex-wrap: nowrap;
+  align-content: center;
+  overflow: scroll;
+  align-items: center;
+  padding: 2vw;
+}
 
 /* começo do footer */
 
